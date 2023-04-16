@@ -30,9 +30,7 @@ class ExampleApp extends StatelessWidget {
           appBar: new AppBar(title: buildTitle('Async Loader Demo')),
           body: new Center(child: _asyncLoader),
           floatingActionButton: new FloatingActionButton(
-            onPressed: () => _asyncLoaderState.currentState
-                .reloadState()
-                .whenComplete(() => print('finished reload')),
+            onPressed: () => _asyncLoaderState.currentState?.reloadState().whenComplete(() => print('finished reload')),
             tooltip: 'Reload',
             child: new Icon(Icons.refresh),
           ),

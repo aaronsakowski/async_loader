@@ -16,11 +16,11 @@ class AsyncLoader extends StatefulWidget {
   final InitStateCallback initState;
 
   AsyncLoader(
-      {Key key,
-      this.renderLoad,
-      this.renderSuccess,
-      this.renderError,
-      this.initState})
+      {Key? key,
+      required this.renderLoad,
+      required this.renderSuccess,
+      required this.renderError,
+      required this.initState})
       : super(key: key);
 
   @override
